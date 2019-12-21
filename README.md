@@ -26,7 +26,6 @@ new Vue({
 </template>
 ```
 如果没有安装过vue-router，需要进行安装`npm install vue-router`
-在`App.vue`下加入`router-view`
 最后启动项目
 ```js
 npm run serve
