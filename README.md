@@ -30,6 +30,8 @@ new Vue({
 ```js
 npm run serve
 ```
+- 在`src/pages`中添加一个新的页面`newPage.vue`,并在其中写上相关代码
+- 在浏览器中输入`http://localhost:8080/newPage`，便可出现相关页面
 
 ## 配置
 安装`vue-cli-plugin-easy-routing`后，会在`vue.config`文件里生成以下配置项
