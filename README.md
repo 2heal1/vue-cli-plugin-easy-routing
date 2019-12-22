@@ -3,6 +3,49 @@
 ## 环境
 - Vue CLI `3.1.0`
 - VueRouter `3.02`
+## 功能简介
+假设 `pages` 目录结构如下：
+```js
++ pages/
+  + $folder/
+    - page.js
+    - _layout.js
+  - index.js
+```
+那么，该插件会自动生成路由配置如下：
+```js
+function Index() {
+  return import(/* webpackChunkName: "page-index" */ '@/pages/index.vue')
+}
+function FolderLayout() {
+  return import(
+    /* webpackChunkName: "page-$folder-layout" */ '@/pages/$folder/_layout.vue'
+  )
+}
+function FolderPage() {
+  return import(
+    /* webpackChunkName: "page-$folder-page" */ '@/pages/$folder/page.vue'
+  )
+}
+export default [
+  {
+    path: '/',
+    redirect: '/index'
+  },
+  {
+    name: 'index',
+    path: '/index',
+    component: Index
+  },
+  {
+    name: '$folder-layout',
+    path: '/:folder/layout',
+    component: FolderLayout,
+
+    children: [{ name: '$folder-page', path: 'page', component: FolderPage }]
+  }
+]
+```
 ## 安装及其使用
 
 ```js
