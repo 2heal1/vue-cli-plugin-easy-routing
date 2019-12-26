@@ -8,9 +8,9 @@
 ```js
 + pages/
   + $folder/
-    - page.js
-    - _layout.js
-  - index.js
+    - page.vue
+    - _layout.vue
+  - index.vue
 ```
 那么，该插件会自动生成路由配置如下：
 ```js

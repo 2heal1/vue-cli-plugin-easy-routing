@@ -5,7 +5,7 @@ module.exports = (api, options) => {
 
   const pluginOptions = {
     pages: 'src/pages',
-    nested: true,
+    chunkNamePrefix: 'page-',
     redirectPath: 'index'
   }
 
