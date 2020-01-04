@@ -1,7 +1,7 @@
 module.exports = api => {
   api.extendPackage({
     devDependencies: {
-      'vue-cli-easy-route': '1.1.2'
+      'vue-cli-easy-route': '1.1.3'
     },
     vue: {
       pluginOptions: {

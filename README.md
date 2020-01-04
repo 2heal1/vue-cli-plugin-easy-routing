@@ -158,13 +158,14 @@ export default [
 
 ## 含有路由元的路由
 - 在`.vue`页面内`<route-meta>`自定义模块内写相应的json
-- 在`meta`中的**字符串**需要在加单引号`'`
 
 ```js
 <route-meta>
 {
-  "breadcrumb":"[a.b]",
-  "strMsg":"'msg'"
+  "str":"str",
+  "number":113,
+  "boolean":true,
+  "array":["array"]
 }
 </route-meta>
 ```
@@ -172,10 +173,9 @@ export default [
 ```js
   {
     name: 'hasMeta',
-    path: '/hasMeta',
-    component: 'hasMeta',
-    breadcrumb: [a.b], 
-    strMsg:'msg'
+    path: 'hasMeta',
+    component: HasMeta,
+    meta: { str: 'str', number: 113, boolean: true, array: ['array'] }
   },
 ```
 

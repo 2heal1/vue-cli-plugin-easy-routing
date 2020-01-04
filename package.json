@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-easy-routing",
-  "version": "1.1.9",
+  "version": "1.2.1",
   "description": "Vue Cli Plugin that provides easy-routing",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,6 @@
     "generator"
   ],
   "peerDependencies": {
-    "vue-cli-easy-route": "1.1.2"
+    "vue-cli-easy-route": "1.1.3"
   }
 }
