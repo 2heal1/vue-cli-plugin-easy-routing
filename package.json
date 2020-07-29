@@ -1,10 +1,14 @@
 {
   "name": "vue-cli-plugin-easy-routing",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Vue Cli Plugin that provides easy-routing",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2heal1/vue-cli-plugin-easy-routing"
   },
   "author": "heal",
   "license": "ISC",

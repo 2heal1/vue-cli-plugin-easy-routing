@@ -257,3 +257,7 @@ export default [
 ## NPM
 
 - [vue-cli-plugin-easy-routing](https://www.npmjs.com/package/vue-cli-plugin-easy-routing)
+
+## GITHUB
+
+- [vue-cli-plugin-easy-routing](https://github.com/2heal1/vue-cli-plugin-easy-routing)
